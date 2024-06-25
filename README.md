@@ -4,9 +4,9 @@ Client-cards is a React-based application designed to manage client information 
 
 ## Deployment
 
-This application is currently deployed at [https://client-cards.vercel.app/](https://client-cards.vercel.app/).
+🚀 This application is currently deployed at [https://client-cards.vercel.app/](https://client-cards.vercel.app/).
 
-An example of a unit test can be found [here](https://github.com/voloshyndmitry/client-card/blob/main/src/components/Card/__tests__/Card.test.tsx).
+🧪 An example of a unit test can be found [here](https://github.com/voloshyndmitry/client-card/blob/main/src/components/Card/__tests__/Card.test.tsx).
 
 ## Getting Started
 
