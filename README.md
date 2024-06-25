@@ -1,6 +1,6 @@
 # Client cards
 
-Client-cards is a React-based application designed to manage client information efficiently. This project uses a modern technology stack including React, Material-UI, Emotion, and Vite, providing a robust framework for developing scalable and maintainable web applications.
+Client-cards is a React-based application designed to manage client information efficiently. This project uses a modern technology stack including React, Material-UI and Vite, providing a robust framework for developing scalable and maintainable web applications.
 
 ## Deployment
 
@@ -8,9 +8,9 @@ Client-cards is a React-based application designed to manage client information 
 
 🧪 An example of a integration test can be found [here](https://github.com/voloshyndmitry/client-card/blob/main/src/components/Card/__tests__/Card.test.tsx).
 
-🧪 An example of a unit test can be found [here](https://github.com/voloshyndmitry/client-card/blob/main/src/api/__tests__/common.test.ts).
+🧪 An example of a unit test 1 can be found [here](https://github.com/voloshyndmitry/client-card/blob/main/src/api/__tests__/common.test.ts).
 
-🧪 An example of a unit test can be found [here](https://github.com/voloshyndmitry/client-card/blob/main/src/api/__tests__/users.test.ts).
+🧪 An example of a unit test 2 can be found [here](https://github.com/voloshyndmitry/client-card/blob/main/src/api/__tests__/users.test.ts).
 
 ## Getting Started
 
