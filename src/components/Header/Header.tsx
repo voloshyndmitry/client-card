@@ -8,8 +8,6 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-import React from "react";
-
 const Header = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
