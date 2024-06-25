@@ -1,6 +1,6 @@
-# Hypercare
+# Client cards
 
-Hypercare is a React-based application designed to manage client information efficiently. This project uses a modern technology stack including React, Material-UI, Emotion, and Vite, providing a robust framework for developing scalable and maintainable web applications.
+Client-cards is a React-based application designed to manage client information efficiently. This project uses a modern technology stack including React, Material-UI, Emotion, and Vite, providing a robust framework for developing scalable and maintainable web applications.
 
 ## Deployment
 
