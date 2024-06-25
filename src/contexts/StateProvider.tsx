@@ -6,6 +6,8 @@ interface StateContextProps {
   setUsers: React.Dispatch<React.SetStateAction<UserIntf[]>>;
   selectedPage: number;
   setSelectedPage: React.Dispatch<React.SetStateAction<number>>;
+  selectedUser: UserIntf | undefined;
+  setSelectedUser: React.Dispatch<React.SetStateAction<UserIntf | undefined>>;
 }
 
 const StateContext = createContext<StateContextProps | undefined>(undefined);
@@ -17,10 +19,18 @@ interface StateProviderProps {
 export const StateProvider = ({ children }: StateProviderProps) => {
   const [users, setUsers] = useState<UserIntf[]>([]);
   const [selectedPage, setSelectedPage] = useState<number>(1);
+  const [selectedUser, setSelectedUser] = useState<UserIntf | undefined>();
 
   return (
     <StateContext.Provider
-      value={{ users, setUsers, selectedPage, setSelectedPage }}
+      value={{
+        users,
+        setUsers,
+        selectedPage,
+        setSelectedPage,
+        selectedUser,
+        setSelectedUser,
+      }}
     >
       {children}
     </StateContext.Provider>

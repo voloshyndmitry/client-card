@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <Stack gap={"10px"} justifyContent={"space-between"} pt={5}>
       <Divider variant="middle" />
-      <Stack alignItems={"center"} mt={5}>
+      <Stack alignItems={"center"} mt={3} mb={5}>
         <Pagination count={count} onChange={handleChangePage} />
       </Stack>
     </Stack>

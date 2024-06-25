@@ -1,8 +1,10 @@
 import { Stack } from "@mui/material";
-import Content from "./components/Content/Content";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import { StateProvider } from "./contexts/StateProvider";
+import Content from "./Content/Content";
+import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
+import { StateProvider } from "../contexts/StateProvider";
+import "./_reset.css";
+import UserDetails from "./UserDetails/UserDetails";
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <Content></Content>
         <Footer></Footer>
       </Stack>
+      <UserDetails />
     </StateProvider>
   );
 }

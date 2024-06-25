@@ -4,14 +4,20 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { UserIntf } from "../../Interfaces/common";
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import Avatar from "@mui/material/Avatar";
+import { useStateContext } from "../../contexts/StateProvider";
 
 const Card = (props: UserIntf) => {
+  const { setSelectedUser } = useStateContext();
   const fullName = useMemo(
     () => `${props.firstname} ${props.lastname}`,
     [props.firstname, props.lastname]
   );
+
+  const handleClick = useCallback(() => {
+    setSelectedUser(props);
+  }, []);
 
   return (
     <MCard sx={{ width: 345 }}>
@@ -28,13 +34,18 @@ const Card = (props: UserIntf) => {
         <Typography
           variant="body2"
           color="text.secondary"
-          sx={{ height: 140, paddingBottom: 5 }}
+          component="div"
+          sx={{
+            height: 40,
+            overflow: "hidden",
+          }}
         >
           {props.description}
         </Typography>
+        {props.description?.length > 100 ? "..." : <br />}
       </CardContent>
       <CardActions>
-        <Button>Learn More</Button>
+        <Button onClick={handleClick}>Learn More</Button>
       </CardActions>
     </MCard>
   );
