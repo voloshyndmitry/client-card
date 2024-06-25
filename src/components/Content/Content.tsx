@@ -1,6 +1,8 @@
+import React from "react";
+
 import { useCallback, useEffect, useMemo } from "react";
 import Card from "../Card/Card";
-import { Box, Fade, Grow, Stack } from "@mui/material";
+import { Box, Fade, Stack } from "@mui/material";
 import { UserIntf } from "../../Interfaces/common";
 import { fetchUsers } from "../../api/users";
 import { useStateContext } from "../../contexts/StateProvider";
