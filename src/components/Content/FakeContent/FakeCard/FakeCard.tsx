@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Stack, Skeleton } from "@mui/material";
 import MCard from "@mui/material/Card";
 

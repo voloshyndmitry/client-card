@@ -1,5 +1,3 @@
-import React from "react"; // added for vitest
-
 import MCard from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";

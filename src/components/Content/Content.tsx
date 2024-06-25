@@ -1,5 +1,3 @@
-import React from "react";
-
 import { useCallback, useEffect, useMemo } from "react";
 import Card from "../Card/Card";
 import { Box, Fade, Stack } from "@mui/material";

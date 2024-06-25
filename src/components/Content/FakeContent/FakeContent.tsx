@@ -1,4 +1,3 @@
-import React from "react";
 import { Stack } from "@mui/material";
 import { USERS_PER_PAGE } from "../../../constants";
 import FakeCard from "./FakeCard/FakeCard";
