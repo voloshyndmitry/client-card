@@ -1,32 +1,40 @@
 import MCard from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { UserIntf } from "../../Interfaces/common";
+import { useMemo } from "react";
+import Avatar from "@mui/material/Avatar";
 
-interface IProps {}
+const Card = (props: UserIntf) => {
+  const fullName = useMemo(
+    () => `${props.firstname} ${props.lastname}`,
+    [props.firstname, props.lastname]
+  );
 
-const Card = (props: IProps) => {
   return (
-    <MCard sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="green iguana"
+    <MCard sx={{ width: 345 }}>
+      <Avatar
+        alt={fullName}
+        src={props.avatar}
+        sx={{ width: 56, height: 56 }}
       />
+
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {fullName}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          sx={{ height: 140, paddingBottom: 5 }}
+        >
+          {props.description}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button>Learn More</Button>
       </CardActions>
     </MCard>
   );
