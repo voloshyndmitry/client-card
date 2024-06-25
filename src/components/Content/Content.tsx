@@ -41,7 +41,8 @@ const Content = () => {
         gap={"10px"}
         mt={"10px"}
         p={"10px"}
-        width={"1100px"}
+        maxWidth={"1100px"}
+        width={"100%"}
       >
         {selectedUsers.map((user, index) => (
           <Fade
